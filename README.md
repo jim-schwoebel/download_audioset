@@ -29,5 +29,11 @@ Now, type this into your terminal:
     python3 setup.py
     python3 as_download.py 
     
+After you start the script, it will take roughly 1-2 days to fully download the dataset. This is because I implemented a 5 second sleep in between requests of downloading videos to not strain Google's server. 
+
+# result
+
+The result looks like this:
+
 # references 
 * [Audioset](https://research.google.com/audioset/)
