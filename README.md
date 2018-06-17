@@ -12,6 +12,6 @@ Downloads and clips all videos on youtube on behalf of the audioset dataset.
 
 Type this into your terminal:
 
-    git clone (this repository)
+    git clone git@github.com:jim-schwoebel/download_audioset.git
     python3 as_download.py 
     
