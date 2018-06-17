@@ -1,6 +1,8 @@
+################################################################################
+##                           DOWNLOAD_AUDIOSET.PY                             ##
+################################################################################
 '''
-download_audioset.py
-
+Script name: download_audioset.py
 Author: Jim Schwoebel
 License: Apache 2.0 
 
