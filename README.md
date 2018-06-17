@@ -12,7 +12,7 @@ The as_download.py script thus downloads all the audio files from the [audioset 
 
 # quick checks
 
-Make sure you have roughly 30 GB of free space on your hard disk. You'll need roughly this much space before continuing.
+Make sure you have roughly 35 GB of free space on your hard disk. You'll need roughly this much space before continuing.
 
 # how to do this 
 
