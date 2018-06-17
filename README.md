@@ -6,9 +6,9 @@ When I first tried to download this dataset, I had some troubles because the cla
 
 This scrip thus downloads and clips all videos on youtube on behalf of the [audioset dataset](https://research.google.com/audioset/) to make it easy to do data science and modeling. 
 
-# Things to make sure 
+# quick checks
 
-Make sure you have roughly 30 GB of free space on your hard disk.
+Make sure you have roughly 30 GB of free space on your hard disk. You'll need roughly this much space before continuing.
 
 # how to do this 
 
