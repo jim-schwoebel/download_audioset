@@ -15,3 +15,5 @@ Type this into your terminal:
     git clone git@github.com:jim-schwoebel/download_audioset.git
     python3 as_download.py 
     
+# references 
+* [Audioset](https://research.google.com/audioset/)
