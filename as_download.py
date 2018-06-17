@@ -16,7 +16,7 @@ def convertlabels(sortlist,labels,textlabels):
 
     return clabels 
 
-defaultdir='/Users/jim/Desktop/downloadaudioset/'
+defaultdir=os.getcwd()
 os.chdir(defaultdir)
 
 #load labels of the videos
