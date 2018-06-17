@@ -4,7 +4,7 @@
 '''
 Script name: download_audioset.py
 Author: Jim Schwoebel
-License: Apache 2.0 
+License: BSD 3.0
 
 This script parses through the entire balanced audioset dataset and downloads
 all the raw audio files. The files are arranged in folders according to their
