@@ -4,7 +4,7 @@ This repository makes it really easy to download [Audioset](https://research.goo
 
 ## why make this repository?
 
-When I first tried to download this dataset, I had some troubles getting the raw audio files. Google released most of the files as features that they extracted, but did not give access to raw .wav files. Also, many of the classes all had odd .csv labels to make it hard to download the raw files. I also needed to clip the actual audio to the proper lengths if I were to download the videos off of youtube. So, I made a script to make it easy to download this dataset locally on your computer or on a server. 
+When I first tried to download this dataset, I had some troubles getting the raw audio files. Google released most of the files as features that they extracted, but did not give access to raw .wav files. Many of the classes all had odd .csv labels to make it hard to download the raw files. I also needed to clip the actual audio to the proper lengths if I were to download the videos off of youtube. So, I made a script to make it easy to download this dataset locally on your computer or on a server. 
 
 ## what does this repo do?
 
