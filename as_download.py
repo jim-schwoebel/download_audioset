@@ -1,9 +1,5 @@
-import pafy
-import os
+import pafy, os, shutil, time, ffmpy
 import pandas as pd
-import shutil
-import time
-import ffmpy
 import soundfile as sf 
 
 #function to clean labels 
