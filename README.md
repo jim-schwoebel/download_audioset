@@ -4,7 +4,7 @@ This repository makes it really easy to download [Audioset](https://research.goo
 
 When I first tried to download this dataset, I had some troubles because the classes all had odd .csv labels. I also needed to clip the actual audio to the proper lengths if I were to download the videos off of youtube. So, I made a script to make it easy to download this dataset locally on your computer or on a server. 
 
-This scrip thus downloads and clips all videos on youtube on behalf of the [audioset dataset](https://research.google.com/audioset/) to make it easy to do data science and modeling. 
+This script thus downloads al the audio files from the [audioset dataset](https://research.google.com/audioset/) to make it easy to do data science and modeling on this data. Specifically, it downloads the audio from the video files and clips these audio files at the designated time points and arranges all the classes into folders. 
 
 # quick checks
 
