@@ -4,15 +4,25 @@ This repository makes it really easy to download [Audioset](https://research.goo
 
 When I first tried to download this dataset, I had some troubles because the classes all had odd .csv labels. I also needed to clip the actual audio to the proper lengths if I were to download the videos off of youtube. So, I made a script to make it easy to download this dataset locally on your computer or on a server. 
 
-# what this script does
+This scrip thus downloads and clips all videos on youtube on behalf of the [audioset dataset](https://research.google.com/audioset/) to make it easy to do data science and modeling. 
 
-Downloads and clips all videos on youtube on behalf of the audioset dataset. 
+# Things to make sure 
+
+Make sure you have roughly 30 GB of free space on your hard disk.
 
 # how to do this 
 
-Type this into your terminal:
+This assumes you are on a mac computer. 
 
+If you don't have homebrew installed, type this into the terminal:
+
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Now, type this into your terminal:
+    
+    cd ~ 
     git clone git@github.com:jim-schwoebel/download_audioset.git
+    python3 setup.py
     python3 as_download.py 
     
 # references 
