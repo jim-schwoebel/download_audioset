@@ -1,6 +1,33 @@
+'''
+download_audioset.py
+
+Author: Jim Schwoebel
+License: Apache 2.0 
+
+This script parses through the entire balanced audioset dataset and downloads
+all the raw audio files. The files are arranged in folders according to their
+representative classes.
+
+Please ensure that you have roughly 35GB of free space on your computer before
+downloading the files. Note that it may take up to 2 days to fully download 
+all the files.
+
+Enjoy! - :) 
+
+-Jim 
+'''
+
+################################################################################
+##                            IMPORT STATEMENTS                               ##
+################################################################################
+
 import pafy, os, shutil, time, ffmpy
 import pandas as pd
 import soundfile as sf 
+
+################################################################################
+##                            HELPER FUNCTIONS                                ##
+################################################################################
 
 #function to clean labels 
 def convertlabels(sortlist,labels,textlabels):
@@ -15,6 +42,10 @@ def convertlabels(sortlist,labels,textlabels):
         clabels.append(clabel)
 
     return clabels 
+
+################################################################################
+##                            MAIN SCRIPT                                     ##
+################################################################################
 
 defaultdir=os.getcwd()
 os.chdir(defaultdir)
