@@ -6,7 +6,7 @@ When I first tried to download this dataset, I had some troubles because the cla
 
 # what this script does
 
-Downloads and clipps all videos on youtube on behalf of the audioset dataset. 
+Downloads and clips all videos on youtube on behalf of the audioset dataset. 
 
 # how to do this 
 
