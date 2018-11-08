@@ -29,9 +29,8 @@ Now, type this into your terminal:
     
 After you start the script, it will take roughly 1-2 days to fully download the dataset. This is because I implemented a 5 second sleep in between requests of downloading videos to not strain Google's server. 
 
-## Cases where videos cannot be downloaded
-Here are some cases where you cannot download the raw audio files:
-* Video removed
+Note there are some cases where you cannot download the raw audio files, including:
+* When a video is removed
 * User account deleted
 * Not available in country
 * Need to sign in to view
