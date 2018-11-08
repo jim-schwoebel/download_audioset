@@ -10,13 +10,11 @@ When I first tried to download this dataset, I had some troubles getting the raw
 
 The as_download.py script thus downloads all the audio files from the [audioset dataset](https://research.google.com/audioset/) to make it easy to do data science and modeling on this data. Specifically, it downloads the audio from the video files and clips these audio files at the designated time points and arranges all the classes into folders. 
 
-## quick checks
+## downloading audio files 
 
-Make sure you have roughly 35 GB of free space on your hard disk. You'll need roughly this much space before continuing.
-
-## how to do this 
-
-This assumes you are on a mac computer. 
+Here are some quick checks 
+* Make sure you have roughly 35 GB of free space on your hard disk. You'll need roughly this much space before continuing.
+* This section assumes you are on a mac computer. 
 
 If you don't have homebrew installed, type this into the terminal:
 
