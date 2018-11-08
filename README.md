@@ -563,5 +563,9 @@ The result will be a folder structure like this (32,418,497,718 bytes (32.45 GB 
     Zipper(clothing)
     Zither
 
+# models
+
+If you're looking for some models built from these folders, check out the [[audioset-models]] repository.
+
 # references 
 * [Audioset](https://research.google.com/audioset/)
