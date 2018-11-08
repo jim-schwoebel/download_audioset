@@ -10,11 +10,11 @@ When I first tried to download this dataset, I had some troubles getting the raw
 
 The as_download.py script thus downloads all the audio files from the [audioset dataset](https://research.google.com/audioset/) to make it easy to do data science and modeling on this data. Specifically, it downloads the audio from the video files and clips these audio files at the designated time points and arranges all the classes into folders. 
 
-# quick checks
+## quick checks
 
 Make sure you have roughly 35 GB of free space on your hard disk. You'll need roughly this much space before continuing.
 
-# how to do this 
+## how to do this 
 
 This assumes you are on a mac computer. 
 
@@ -31,7 +31,7 @@ Now, type this into your terminal:
     
 After you start the script, it will take roughly 1-2 days to fully download the dataset. This is because I implemented a 5 second sleep in between requests of downloading videos to not strain Google's server. 
 
-# result
+## result
 
 The result will be a folder structure like this (32,418,497,718 bytes (32.45 GB on disk)):
 
@@ -563,7 +563,7 @@ The result will be a folder structure like this (32,418,497,718 bytes (32.45 GB 
     Zipper(clothing)
     Zither
 
-# models
+## machine learning models
 
 If you're looking for some models built from these folders, check out the [[audioset-models]] repository.
 
