@@ -12,7 +12,7 @@ When I first tried to download this dataset, I had some trouble getting the raw 
 
 ## what does this repo do?
 
-The as_download.py script thus downloads all the audio files from the [audioset dataset](https://research.google.com/audioset/) to make it easy to do data science and modeling on this data. Specifically, it downloads the audio from the video files and clips these audio files at the designated time points and arranges all the classes into folders. 
+The as_download.py script thus downloads and converts all the audio files in the AudioSet dataset from the YouTube to make it easy to do data science and modeling on this data. Specifically, it downloads the audio from the video files and clips these audio files at the designated time points and arranges all the classes into folders. 
 
 ## downloading audio files 
 
