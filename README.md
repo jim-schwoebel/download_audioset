@@ -6,15 +6,15 @@ AudioSet consists of an expanding ontology of 632 audio event classes and a coll
 
 ![](https://media.giphy.com/media/uQdd4DEKErrlm/giphy.gif)
 
-## why make this repository?
+## Why make this repository?
 
 When I first tried to download this dataset, I had some trouble getting the raw audio files. Google released most of the files as features that they extracted (via the AudioSet Embedding), but did not give access to raw .wav files. So, I made a script to make it easy to download this dataset locally on your computer or on a server. 
 
-## what does this repo do?
+## What does this repo do?
 
 The as_download.py script thus downloads and converts all the audio files in the AudioSet dataset from the YouTube to make it easy to do data science and modeling on this data. Specifically, it downloads the audio from the video files and clips these audio files at the designated time points and arranges all the classes into folders. 
 
-## downloading audio files 
+## Downloading audio files 
 
 Here are some quick checks 
 * Make sure you have roughly 35 GB of free space on your hard disk. You'll need roughly this much space before continuing.
@@ -41,7 +41,7 @@ Note there are some cases where you cannot download the raw audio files, includi
 * Video no longer exists
 * Copyright takedown
 
-## result
+## Resulting folder structure 
 
 The result will be a folder structure like this (32,418,497,718 bytes (32.45 GB on disk)):
 
@@ -573,9 +573,18 @@ The result will be a folder structure like this (32,418,497,718 bytes (32.45 GB 
     Zipper(clothing)
     Zither
 
-## machine learning models
+## Machine learning models
 
 If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
 
-# references 
+## Feedback
+Any feedback on the book or this repository is greatly appreciated. 
+* If you find something that is missing or doesn't work, please consider opening a [GitHub issue](https://github.com/jim-schwoebel/download_audioset/issues).
+* If you'd like to be mentored by someone on our team, check out the [Innovation Fellows Program](http://neurolex.ai/research).
+* If you want to talk to me directly, please send me an email @ js@neurolex.co. 
+
+## License
+This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
+
+## References 
 * [Audioset](https://research.google.com/audioset/)
