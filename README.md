@@ -1,6 +1,6 @@
 # download_audioset
 
-This repository makes it really easy to download [Audioset](https://research.google.com/audioset/), the open source library released by Google for speech object detection research. If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
+This repository makes it really easy to download [Audioset](https://research.google.com/audioset/), the open source library released by Google for speech object detection research. 
 
 AudioSet consists of an expanding ontology of 632 audio event classes and a collection of 2,084,320 human-labeled 10-second sound clips drawn from YouTube videos. The ontology is specified as a hierarchical graph of event categories, covering a wide range of human and animal sounds, musical instruments and genres, and common everyday environmental sounds.
 
@@ -10,9 +10,9 @@ AudioSet consists of an expanding ontology of 632 audio event classes and a coll
 
 When I first tried to download this dataset, I had some trouble getting the raw audio files. Google released most of the files as features that they extracted (via the AudioSet Embedding), but did not give access to raw .wav files. So, I made a script to make it easy to download this dataset locally on your computer or on a server. 
 
-## What does this repo do?
-
 The as_download.py script thus downloads and converts all the audio files in the AudioSet dataset from the YouTube to make it easy to do data science and modeling on this data. Specifically, it downloads the audio from the video files and clips these audio files at the designated time points and arranges all the classes into folders. 
+
+If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
 
 ## Downloading audio files 
 
