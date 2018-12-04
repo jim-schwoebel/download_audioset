@@ -6,6 +6,8 @@ AudioSet consists of an expanding ontology of 632 audio event classes and a coll
 
 ![](https://media.giphy.com/media/uQdd4DEKErrlm/giphy.gif)
 
+If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
+
 ## Why make this repository?
 
 When I first tried to download this dataset, I had some trouble getting the raw audio files. Google released most of the files as features that they extracted (via the AudioSet Embedding), but did not give access to raw .wav files. So, I made a script to make it easy to download this dataset locally on your computer or on a server. 
@@ -572,10 +574,6 @@ The result will be a folder structure like this (32,418,497,718 bytes (32.45 GB 
     Zing
     Zipper(clothing)
     Zither
-
-## Machine learning models
-
-If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
 
 ## Feedback
 Any feedback on the book or this repository is greatly appreciated. 
