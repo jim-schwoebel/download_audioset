@@ -1,12 +1,10 @@
 # download_audioset
 
-This repository makes it really easy to download [Audioset](https://research.google.com/audioset/), the open source library released by Google for speech object detection research. 
+This repository makes it really easy to download [Audioset](https://research.google.com/audioset/), the open source library released by Google for speech object detection research. If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
 
 AudioSet consists of an expanding ontology of 632 audio event classes and a collection of 2,084,320 human-labeled 10-second sound clips drawn from YouTube videos. The ontology is specified as a hierarchical graph of event categories, covering a wide range of human and animal sounds, musical instruments and genres, and common everyday environmental sounds.
 
 ![](https://media.giphy.com/media/uQdd4DEKErrlm/giphy.gif)
-
-If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
 
 ## Why make this repository?
 
