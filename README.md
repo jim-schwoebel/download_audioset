@@ -14,6 +14,8 @@ The as_download.py script thus downloads and converts all the audio files in the
 
 If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
 
+Note that if you are in China, these scripts may not work due to the Great Firewall and blocking YouTube as a website.
+
 ## Downloading audio files 
 
 Here are some quick checks 
