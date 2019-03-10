@@ -45,7 +45,7 @@ Note there are some cases where you cannot download the raw audio files, includi
 
 ## Resulting folder structure 
 
-The result will be a folder structure like this (32,418,497,718 bytes (32.45 GB on disk)):
+The result will be a folder structure like this (32,418,497,718 bytes / 32.45 GB on disk):
 
     Acapella
     Accelerating,revving,vroom
