@@ -95,6 +95,18 @@ def convertlabels(sortlist,labels,textlabels):
 
     return clabels 
 
+def download_audio(link):
+    listdir=os.listdir()
+    os.system("youtube-dl -f 'bestaudio[ext=m4a]' '%s'"%(link))
+    listdir2=os.listdir()
+    filename=''
+    for i in range(len(listdir2)):
+        if listdir2[i] not in listdir and listdir2[i].endswith('.m4a'):
+            filename=listdir2[i]
+            break
+
+    return filename
+
 ################################################################################
 ##                            MAIN SCRIPT                                     ##
 ################################################################################
@@ -186,10 +198,9 @@ for i in range(len(yid)):
             lastdir=os.getcwd()+'/'
     
             try:
-                video=pafy.new(link)
-                bestaudio=video.getbestaudio()
-                filename=bestaudio.download()
-                extension=bestaudio.extension
+                # use YouTube DL to download audio
+                filename=download_audio(link)
+                extension='.m4a'
                 #get file extension and convert to .wav for processing later 
                 os.rename(filename,'%s_start_%s_end_%s%s'%(str(i),start,end,extension))
                 filename='%s_start_%s_end_%s%s'%(str(i),start,end,extension)
