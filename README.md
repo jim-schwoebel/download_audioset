@@ -45,8 +45,9 @@ Alternatively, you could download the unbalanced dataset:
 This could take up to a month to download all the audio files completely ^, so I wouldn't recommend downloading the unbalanced dataset unless you have an external hard disk or another storage medium to store the files. Note if you exit the script and re-run it later, it will continue where the download left off (based on # of audio files downloaded thus far in the loop), and it has an easy-to-see progress bar using tqdm.
 
 ```
- urls
-  1%|▎                                                      | 6621/1048573 [01:00<63:00:30,  4.59it/s]/m/07rv9rh
+1%|▎                                                     | 6681/1048573 [01:11<129:14:33,  2.24it/s]/m/09x0r
+['Speech']
+[youtube] -2TBzNIa7Ns: Downloading webpage
 ```
 
 ## Exceptions 
