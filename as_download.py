@@ -127,41 +127,14 @@ for i in range(len(textlabels)):
     textlabels[i]=textlabels[i].replace(' ','')
 
 #now load data for youtube
-loadfile2=pd.read_excel('balanced_train_segments.xlsx')
+loadfile2=pd.read_excel('unbalanced_train_segments.xlsx')
 
+# ylabels have to be cleaned to make a good list (CSV --> LIST) 
 yid=loadfile2.iloc[:,0].tolist()[2:]
 ystart=loadfile2.iloc[:,1].tolist()[2:]
 yend=loadfile2.iloc[:,2].tolist()[2:]
-#ylabels have to be cleaned to make a good list (CSV --> LIST) 
-ylabels_dirty=loadfile2.iloc[:,3].tolist()[2:]
-ylabels=list()
-
-#make ylabels list compatible as a list (for shutil copy folder structure later)
-for i in range(len(ylabels_dirty)):
-    newlabels=ylabels_dirty[i]
-    commas=ylabels_dirty[i].count(',')
-    if commas==0:
-        ylabels.append([ylabels_dirty[i]])
-    else:
-        listitems=list()
-        #loop through and make a list of items 
-        while newlabels != '':
-            index=newlabels.find(',')
-            if index != -1:
-                listitem=newlabels[0:index]
-                newlabels=newlabels[index+1:]
-                listitems.append(listitem)
-                commas=newlabels.count(',')
-            else:
-                listitem=newlabels
-                listitems.append(listitem)
-                commas=newlabels.count(',')
-                newlabels=''
-            
-        #replace with list of items 
-        ylabels.append(list(listitems))
-            
-        
+ylabels=loadfile2.iloc[:,3].tolist()[2:]
+ 
 #make folders
 try:
     defaultdir2=os.getcwd()+'/audiosetdata/'
