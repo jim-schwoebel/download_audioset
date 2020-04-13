@@ -26,7 +26,7 @@ If you don't have homebrew installed, type this into the terminal:
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Now, type this into your terminal:
+Now, type this into your terminal (to download the balanced dataset):
     
     cd ~ 
     git clone git@github.com:jim-schwoebel/download_audioset.git
@@ -34,6 +34,17 @@ Now, type this into your terminal:
     python3 as_download.py 
     
 After you start the script, it will take roughly 1-2 days to fully download the dataset. This is because I implemented a 5 second sleep in between requests of downloading videos to not strain Google's server. 
+
+Alternatively, you could download the unbalanced dataset:
+
+    cd ~ 
+    git clone git@github.com:jim-schwoebel/download_audioset.git
+    python3 setup.py
+    python3 as_download_unbalanced.py 
+
+This could take up to a month to download all the audio files completely ^, so I wouldn't recommend downloading the unbalanced dataset unless you have an external hard disk or another storage medium to store the files.
+
+## Exceptions 
 
 Note there are some cases where you cannot download the raw audio files, including:
 * When a video is removed
