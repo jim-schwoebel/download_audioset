@@ -9,5 +9,5 @@ def pip_install(modules):
 
 os.system('brew install ffmpeg')
 os.system('brew install youtube-dl')
-modules=['ffmpy','pandas','soundfile','pafy']
+modules=['ffmpy','pandas','soundfile','pafy', 'tqdm']
 pip_install(modules)
