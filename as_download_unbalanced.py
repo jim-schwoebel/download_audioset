@@ -74,6 +74,7 @@ If you would like to work with us let us know @ develop@neurolex.co.
 ################################################################################
 
 import pafy, os, shutil, time, ffmpy
+from natsort import natsorted
 import pandas as pd
 import soundfile as sf 
 from tqdm import tqdm 
@@ -160,11 +161,19 @@ for i in range(len(textlabels)):
                 existing_wavfiles.append(listdir[j])
         os.chdir(defaultdir2)
 
+# get last file checkpoint to leave off 
+existing_wavfiles=natsorted(existing_wavfiles)
+print(existing_wavfiles)
+try:
+    lastfile=int(existing_wavfiles[-1][7:][0:-4])
+except:
+    lastfile=0
+
 #iterate through entire CSV file, look for '--' if found, find index, delete section, then go to next index
 slink='https://www.youtube.com/watch?v='
 
 for i in tqdm(range(len(yid))):
-    if i < len(existing_wavfiles):
+    if i < lastfile:
         print('skipping, already downloaded file...')
     else:
         link=slink+yid[i]
