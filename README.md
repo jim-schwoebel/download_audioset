@@ -42,7 +42,12 @@ Alternatively, you could download the unbalanced dataset:
     python3 setup.py
     python3 as_download_unbalanced.py 
 
-This could take up to a month to download all the audio files completely ^, so I wouldn't recommend downloading the unbalanced dataset unless you have an external hard disk or another storage medium to store the files.
+This could take up to a month to download all the audio files completely ^, so I wouldn't recommend downloading the unbalanced dataset unless you have an external hard disk or another storage medium to store the files. Note if you exit the script and re-run it later, it will continue where the download left off (based on # of audio files downloaded thus far in the loop), and it has an easy-to-see progress bar using tqdm.
+
+```
+ urls
+  1%|▎                                                      | 6621/1048573 [01:00<63:00:30,  4.59it/s]/m/07rv9rh
+```
 
 ## Exceptions 
 
