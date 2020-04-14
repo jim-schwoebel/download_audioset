@@ -14,7 +14,7 @@ The as_download.py script thus downloads and converts all the audio files in the
 
 If you're looking for some models built from these folders, check out the [audioset-models](https://github.com/jim-schwoebel/audioset_models) repository.
 
-Note that if you are in China, these scripts may not work due to the Great Firewall and blocking YouTube as a website.
+Note that if you are in China, these scripts may not work due to the Great Firewall and blocking YouTube as a website. If you are in China, I recommend using [proxychains](https://linuxhint.com/proxychains-tutorial/) and [shadowsocks servers](https://en.wikipedia.org/wiki/Shadowsocks).
 
 ## Downloading audio files 
 
