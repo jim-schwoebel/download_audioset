@@ -8,6 +8,6 @@ def pip_install(modules):
         os.system('pip3 install %s'%(modules[i]))
 
 os.system('brew install ffmpeg')
-os.system('brew install youtube-dl')
+os.system('brew install yt-dlp/taps/yt-dlp')
 modules=['ffmpy','pandas','soundfile','pafy', 'tqdm']
 pip_install(modules)
