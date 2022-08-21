@@ -9,5 +9,5 @@ def pip_install(modules):
 
 os.system('brew install ffmpeg')
 os.system('brew install yt-dlp/taps/yt-dlp')
-modules=['ffmpy','pandas','soundfile','pafy', 'tqdm']
+modules=['ffmpy','pandas','soundfile','pafy', 'tqdm', 'natsort']
 pip_install(modules)
