@@ -50,6 +50,9 @@ This could take up to a month to download all the audio files completely ^, so I
 [youtube] -2TBzNIa7Ns: Downloading webpage
 ```
 
+## Google drive download
+For those who just want to download the files - feel free to use [this google drive link instead](https://drive.google.com/drive/folders/1OGSTJEPEYiWBsKTquPRth1H_ul6HKH9G?usp=sharing). 
+
 ## Exceptions 
 
 Note there are some cases where you cannot download the raw audio files, including:
