@@ -123,7 +123,7 @@ for i in range(len(textlabels)):
     textlabels[i]=textlabels[i].replace(' ','')
 
 #now load data for youtube
-loadfile2=pd.read_excel('unbalanced_train_segments.xlsx')
+loadfile2=pd.read_excel('balanced_train_segments.xlsx')
 
 # ylabels have to be cleaned to make a good list (CSV --> LIST) 
 yid=loadfile2.iloc[:,0].tolist()[2:]

@@ -85,16 +85,12 @@ from tqdm import tqdm
 
 #function to clean labels 
 def convertlabels(sortlist,labels,textlabels):
-
     clabels=list()
-    try:
-        index=labels.index(sortlist)
-        clabel=textlabels[index]
+    label_dict=dict(zip(labels, textlabels))
+    sortlist = sortlist.split(",")
+    for i in range(len(sortlist)):
         #pull out converted label
-        clabels.append(clabel)
-    except:
-        clabels=[]
-
+        clabels.append(label_dict[sortlist[i]])
     return clabels 
 
 def download_audio(link):
@@ -177,8 +173,8 @@ for i in tqdm(range(len(yid))):
         print('skipping, already downloaded file...')
     else:
         link=slink+yid[i]
-        start=float(ystart[i])
-        end=float(yend[i])
+        start=int(float(ystart[i]))
+        end=int(float(yend[i]))
         print(ylabels[i])
         clabels=convertlabels(ylabels[i],labels,textlabels)
         print(clabels)
