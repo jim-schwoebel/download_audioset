@@ -76,6 +76,7 @@ If you would like to work with us let us know @ develop@neurolex.co.
 import pafy, os, shutil, time, ffmpy
 import pandas as pd
 import soundfile as sf 
+from tqdm import tqdm
 
 ################################################################################
 ##                            HELPER FUNCTIONS                                ##
@@ -83,16 +84,12 @@ import soundfile as sf
 
 #function to clean labels 
 def convertlabels(sortlist,labels,textlabels):
-    
     clabels=list()
-    
+    label_dict=dict(zip(labels, textlabels))
+    sortlist = sortlist.split(",")
     for i in range(len(sortlist)):
-        #find index in list corresponding
-        index=labels.index(sortlist[i])
-        clabel=textlabels[index]
         #pull out converted label
-        clabels.append(clabel)
-
+        clabels.append(label_dict[sortlist[i]])
     return clabels 
 
 def download_audio(link):
@@ -104,7 +101,6 @@ def download_audio(link):
         if listdir2[i] not in listdir and listdir2[i].endswith('.m4a'):
             filename=listdir2[i]
             break
-
     return filename
 
 ################################################################################
@@ -153,12 +149,13 @@ for i in range(len(textlabels)):
 #iterate through entire CSV file, look for '--' if found, find index, delete section, then go to next index
 slink='https://www.youtube.com/watch?v='
 
-for i in range(len(yid)):
+for i in tqdm(range(len(yid))):
     link=slink+yid[i]
-    start=ystart[i]
-    end=yend[i]
+    start=int(float(ystart[i]))
+    end=int(float(yend[i]))
     clabels=convertlabels(ylabels[i],labels,textlabels)
-
+    print(clabels)
+    
     for j in range(len(clabels)):
         
         #change to the right directory
@@ -195,12 +192,14 @@ for i in range(len(yid)):
                 startframe=samplerate*startsec
                 endsec=end
                 endframe=samplerate*endsec
+                print(startframe)
+                print(endframe)
                 sf.write('snipped'+file, data[startframe:endframe], samplerate)
                 snippedfile='snipped'+file
                 os.remove(file)
                 
             except:
-                print('no urls')
+               print('error')
 
         else:
             #copy if already downloaded to proper labeled directory
