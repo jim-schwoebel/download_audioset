@@ -94,7 +94,7 @@ def convertlabels(sortlist,labels,textlabels):
 
 def download_audio(link):
     listdir=os.listdir()
-    os.system("youtube-dl -f 'bestaudio[ext=m4a]' '%s'"%(link))
+    os.system('yt-dlp -f "bestaudio[ext=m4a]" "%s"'%(link))
     listdir2=os.listdir()
     filename=''
     for i in range(len(listdir2)):
